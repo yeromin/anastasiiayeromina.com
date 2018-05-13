@@ -1,0 +1,29 @@
+// -------------REVIEWS-------------
+.reviews
+  padding-top: $section-padding
+  padding-bottom: $section-padding
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  border-bottom: 1px solid $section-color
+  // background-color: #a5978e
+  // background-image: url('../img/reviews__background-img.jpg')
+  @media #{$breakpoint_lg}
+    padding-top: $section-padding-lg
+    padding-bottom: $section-padding-lg
+  @media #{$breakpoint_xl}
+    padding-top: $section-padding-xl
+    padding-bottom: $section-padding-xl
+
+
+.reviews__header
+
+.reviews__text 
+  @extend .about-me__text
+  background-color: transparent
+
+.reviews__link 
+  @extend .about-me__link
+  @extend .main-link
+
+// -------------REVIEWS ENDS-------------

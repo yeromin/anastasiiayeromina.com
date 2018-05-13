@@ -1,0 +1,56 @@
+.template-header
+  min-height: 20vh
+  max-height: 70vh
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-content: flex-start
+  @media #{$breakpoint_md}
+    min-height: 10vh
+    height: 35vh
+  @media #{$breakpoint_lg}
+    height: 35vh
+    min-height: 10vh
+  @media #{$breakpoint_xl}
+    height: 35vh
+    min-height: 10vh
+
+.template-main
+  width: span(10)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  @media #{$breakpoint_md}
+    width: span(10)
+  @media #{$breakpoint_lg}
+    width: span(10)
+  @media #{$breakpoint_xl}
+    width: span(10)
+
+
+.template-text
+  font-family: $serif
+  font-size: $font-h1
+  letter-spacing: 0
+  text-align: center
+  margin: 8px 0
+  @media #{$breakpoint_lg}
+    font-size: $font-h1 + 0.8rem
+  @media #{$breakpoint_xl}
+    font-size: $font-h1 + 1rem
+
+
+.template-link
+  @extend .template-text
+  text-decoration: none
+  font-weight: bold
+  &:hover
+    text-decoration: underline
+
+
+.template-img
+  width: 400px
+  margin: 40px 0

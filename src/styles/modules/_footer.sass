@@ -1,0 +1,86 @@
+.footer
+  margin: 50px 0
+
+.footer-wrapper
+  width: span(12)
+  margin: 50px auto 
+  display: flex
+  flex-flow: column nowrap
+  @media #{$breakpoint_lg}
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    width: span(10)
+    margin: 0 auto
+  @media #{$breakpoint_xl}
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    width: span(10)
+    margin: 0 auto
+
+.footer-box1
+  margin: 10px auto
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  @media #{$breakpoint_lg}
+    width: span(3)
+  @media #{$breakpoint_xl}
+    width: span(3)
+
+.footer-box2
+  width: span(12)
+  margin: 10px auto
+  @media #{$breakpoint_lg}
+    width: span(6)
+  @media #{$breakpoint_xl}
+    width: span(6)
+
+.footer-box2--logo
+  max-width: 50%
+
+.logo--footer
+  min-width: 30%
+  max-width: 100%
+  margin: 0
+
+.footer-box3
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  align-items: center
+  width: span(12)
+  margin: 10px auto
+  @media #{$breakpoint_lg}
+    width: span(3)
+  @media #{$breakpoint_xl}
+    width: span(3)  
+
+.footer-box3__item
+  color: $color-text
+  font-size: 1rem
+  text-transform: none
+  font-weight: 300
+  line-height: 1rem
+  letter-spacing: 1px
+  margin: 0
+  padding: 2px 0
+
+.footer-box3-social
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  align-items: bottom
+  margin: 15px 0 0 0
+
+.footer-box3-social__item svg 
+  margin: 0 5px
+
+.footer-box3-social__item
+  a
+    svg
+      &:hover
+        transform: scale(1.1)
+        transition: all 0.5s

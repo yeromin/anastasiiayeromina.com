@@ -1,0 +1,26 @@
+doctype html
+html
+  title Доступ запрещен. Ошибка 403. Фотограф Анастасия Ерёмина. Семейный, детский и свадебный фотограф в Киеве
+  include ./_blocks/001.head.pug
+  body.under-construction-body
+    include ./_blocks/header.pug
+    section.page-content
+      h2.visually-hidden Основной контент сайта
+      section.under-construction-main
+        p.under-construction-text Ошибка доступа
+        p.under-construction-text Перейдите на 
+          a.under-construction-link(href='/') главную
+          |  чтобы найти интересующую Вас информацию
+    include ./_blocks/008.footer.pug
+  
+  //- ========= JAVASCRIPT =========
+
+  script(src="js/scripts.js")
+  <!--<Deject>-->
+  script(src='js/hamburger-menu.js')
+  script(src='js/back-to-top.js')
+  script(src='scripts/facebook-like-plugin.js')
+  <!--</Deject>-->
+
+  //- Не смог настроить асинхронную загрузку именно этого шрифта, поэтому загружаю его в конце, чтобы не блокировать стек
+  //- link(href='https://fonts.googleapis.com/css?family=Roboto:100&subset=cyrillic', rel='stylesheet')

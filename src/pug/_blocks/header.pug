@@ -1,0 +1,25 @@
+header
+  h1.visually-hidden= title
+  .logo
+    img.logo__image(src='img/Logo_new_1x.jpg', srcset='img/Logo_new_1x.jpg 1x, img/Logo_new.jpg 2x', alt='Фотограф Анастасия Еремина', title='Фотограф Анастасия Еремина', aria-hidden='true')
+    a.logo__link(href='/')  
+  .hamburger-wrap__box
+    .hamburger-wrap__item.hamburger-wrap__first
+    .hamburger-wrap__item.hamburger-wrap__second
+    .hamburger-wrap__item.hamburger-wrap__third
+  nav.main-nav(aria-label='Основное меню')
+    //- Main menu:
+    ul.main-nav__list
+      li.main-nav__list-item.active
+        a.main-nav__link(href='/') Главная
+      li.main-nav__list-item
+        a.main-nav__link(href='gallery.html') Портфолио
+      li.main-nav__list-item
+        a.main-nav__link(href='services.html') Услуги
+      li.main-nav__list-item
+        a.main-nav__link(href='reviews.html') Отзывы
+      li.main-nav__list-item
+        a.main-nav__link(href='blog.html') Блог
+      li.main-nav__list-item
+        a.main-nav__link(href='contacts.html') Контакты
+    

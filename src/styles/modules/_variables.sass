@@ -1,0 +1,61 @@
+
+// The Global Susy3 Sass map:
+$susy: (columns: susy-repeat(12), gutters: 0.25, spread: narrow, container-spread: narrow, svg-grid-colors: hsl(180, 50%, 80%))
+// 8 symmetrical, fluid columns
+// gutters are 1/4 the size of a column
+// elements span 1 less gutter than columns
+// containers span 1 less gutter as well
+
+// Fonts
+$sans-serif: Open Sans Condensed, Arial, sans-serif
+$serif: Roboto, Arial, sans-serif
+// $sans-serif: Open Sans Condensed, Arial, sans-serif //без засечек
+// $serif: Comfortaa, Times New Roman, serif //с засечками
+// $serif: Cormorant Garamond, Times New Roman, serif //с засечками
+
+$font-h1: 1.2rem
+$font-h2: 1rem
+
+// Colors
+$color-sea: #89AFB5
+$color-text: #444
+$color-light-text: #bbb
+$color-light-gray: #DADADA
+$color-white: #fff
+
+// Padding between site sections (e.g. "Header", "About me" etc)
+$section-padding: 30px
+$section-padding-lg: $section-padding + 70px
+$section-padding-xl: $section-padding-lg + 50px
+
+// Color between site sections  (e.g. "Header", "About me" etc)
+$section-color: #eee
+
+// Size of preview image in the blog section
+$blog-thumb-size: 250px
+
+
+// ========= Brake points for responsive design (mobile first approach)
+
+// tablets, middle displays:
+$screen-md-min: 520px
+$screen-md-max: 990px
+
+// computers, large displays:
+$screen-lg-min: 991px
+$screen-lg-max: 1440px
+
+// TVs, extra large displays:
+$screen-xl-min: 1441px
+
+// Brakepoints:
+$breakpoint_md:  "(min-width:" $screen-md-min + ") and (max-width:" + $screen-md-max + ")"
+$breakpoint_lg:  "(min-width:" $screen-lg-min + ") and (max-width:" + $screen-lg-max + ")"
+$breakpoint_xl:  "(min-width:" $screen-xl-min + ")"
+
+// How to use:
+// @media #{$breakpoint_md}
+// @media #{$breakpoint_lg}
+// @media #{$breakpoint_xl}
+
+// Brakepoints ENDS

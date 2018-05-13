@@ -1,0 +1,168 @@
+// -------------ABOUT ME-------------
+.about-me
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: right
+  border-bottom: 1px solid $section-color
+  padding-top: $section-padding
+  padding-bottom: $section-padding
+  width: span(12)
+  margin: 0 auto
+  // background-color: #f6f4f2
+  @media #{$breakpoint_md}
+    width: span(11)
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    position: relative
+  @media #{$breakpoint_lg}
+    width: span(10)
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    position: relative
+    padding-top: $section-padding-lg
+    padding-bottom: $section-padding-lg
+  @media #{$breakpoint_xl}
+    width: span(10)
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    position: relative
+    padding-top: $section-padding-xl
+    padding-bottom: $section-padding-xl
+
+.about-me__photo
+  display: block
+  max-width: 30%
+  margin: 20px auto
+  padding: 0 !important
+  vertical-align: bottom // instead of "display:block" property
+  // height: 100px
+  @media #{$breakpoint_md}
+    max-width: 15%
+  @media #{$breakpoint_lg}
+    max-width: 20%
+  @media #{$breakpoint_xl}
+    max-width: 30%
+
+.about-me__header
+
+.about-me__container
+  width: 100%
+  margin: 0 auto
+  display: flex
+  align-items: center
+  margin-top: 50px
+  @media (max-width: 520px)
+    flex-direction: column
+  .about__photo
+    width: span(4)
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    @media (max-width: 520px)
+      height: auto
+      width: 50%
+    img
+      max-width: 100%
+      max-height: 100%
+.about-me__text
+  width: span(7)
+  margin-right: auto
+  margin-left: auto
+  text-align: left
+  font-size: $font-h2
+  font-family: $serif
+  color: $color-text
+  line-height: 1.5rem
+  font-weight: 100
+  @media (max-width: 520px)
+    margin-top: 50px
+  // line-height: 2rem
+  // letter-spacing: 2px
+  // font-style: italic
+  // @media #{$breakpoint_md}
+  //   width: span(8)
+  // @media #{$breakpoint_lg}
+  //   width: span(8)
+  //   font-size: $font-h2
+  // @media #{$breakpoint_xl}
+  //   width: span(8)
+  //   font-size: $font-h2
+
+.about-me__box
+  // position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
+  order: 4
+  @media #{$breakpoint_lg}
+    width: 100%
+    flex-direction: column
+    align-items: flex-end
+    margin: 0 auto 0 auto
+
+
+.about-me__link
+  @extend .main-link
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: 40%
+  &:hover, &:focus, &:active
+    font-weight: bold
+  &:hover, &:focus, &:active .arrow-link
+    cursor: pointer
+    border-color: transparent
+    border-width: 0
+    .arrow-mask
+      left: -15px
+      top: -26px
+      &:before, &:after
+        background-color: $color-sea
+  @media #{$breakpoint_lg}
+    width: auto
+  @media #{$breakpoint_xl}
+    width: auto
+
+.arrow-link
+  // margin-left: 20px
+  // border: 2px solid $color-light-gray
+  border-radius: 100%
+  width: 40px
+  height: 40px
+  transition: all 0.5s
+  .arrow-mask
+    transition: all 0.5s
+    position: relative
+    top: -26px
+    left: -30px
+    border: 21px solid transparent
+    &:before
+      transition: all 0.5s
+      content: ''
+      position: relative
+      float: left
+      top: 13px
+      left: 28px
+      width: 1px
+      height: 16px
+      background-color: $color-light-gray
+      transform: rotate(-45deg)
+      transition: all 0.5s
+    &:after
+      content: ''
+      transition: all 0.5s
+      position: relative
+      float: left
+      top: 8px
+      left: 28px
+      width: 1px
+      height: 16px
+      background-color: $color-light-gray
+      transform: rotate(45deg)
+      transition: all 0.5s
+// -------------ABOUT ME ENDS-------------

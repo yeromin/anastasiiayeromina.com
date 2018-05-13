@@ -1,0 +1,136 @@
+// -------------BLOG-------------
+.blog
+  padding-top: $section-padding
+  padding-bottom: $section-padding
+  border-bottom: 1px solid $section-color
+  @media #{$breakpoint_lg}
+    padding-top: $section-padding-lg
+    padding-bottom: $section-padding-lg
+  @media #{$breakpoint_xl}
+    padding-top: $section-padding-xl
+    padding-bottom: $section-padding-xl
+
+.blog__header
+  margin-bottom: 20px
+
+.blog-feed
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+  flex-wrap: wrap
+  width: span(10)
+  margin: 0 auto
+  @media #{$breakpoint_md}
+    width: span(11)
+    // flex-wrap: nowrap
+  @media #{$breakpoint_lg}
+    flex-wrap: nowrap
+  @media #{$breakpoint_xl}
+    flex-wrap: nowrap
+
+  // ul
+  //   list-style: none
+  //   padding: 0
+  //   margin: 0
+
+// -------------Blog items
+figure.blog-feed__item
+  position: relative
+  margin: 10px 10px
+  width: $blog-thumb-size
+  overflow: hidden
+  background-repeat: no-repeat
+  background-position: top
+  background-size: 130%
+  transition: all 0.8s ease-in-out
+  border: 1px solid $section-color
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+  @media #{$breakpoint_md}
+    position: relative
+    width: 200px
+    height: 200px + 70px
+  @media #{$breakpoint_lg}
+    position: relative
+    width: 300px
+    height: 300px + 70px
+  @media #{$breakpoint_xl}
+    position: relative
+    width: 300px
+    height: 300px + 70px
+  @media (max-width: 970px)
+    width: 48%
+    height: 400px
+    margin: 0 0 20px
+  @media (max-width: 520px)
+    width: 100%
+
+  &:hover
+    background-size: 140%
+    transform: scale(1)
+  *
+    transition: all 0.4s ease-in-out
+
+  figcaption
+    background-color: rgba($color-white, 1)
+    height: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-top: $blog-thumb-size
+    @media #{$breakpoint_md}
+      height: 70px
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+    @media #{$breakpoint_lg}
+      height: 70px
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+    @media #{$breakpoint_xl}
+      height: 70px
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+    h2
+      color: $color-text
+      margin: 0
+      font-weight: 300
+      text-transform: uppercase
+      font-size: $font-h1
+      // top: 50%
+      span
+        font-weight: 900
+    // &:before
+    //   left: 0
+    //   top: 0
+    // &:after
+    //   bottom: 0
+    //   right: 0
+  a
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    position: absolute
+  // &:hover figcaption
+  //   transform: scale(1.2)
+  // &:hover figcaption:before, &.hover figcaption:after
+    // width: 200%
+  &:hover h2
+    // padding: span(3) 0
+  // &:hover h2:before, h2:after
+    // width: 200%
+  // &:hover figcaption
+  //   background-color: rgba(0,0,0, 1)
+
+// -------------Blog items ends
+// -------------BLOG ENDS-------------

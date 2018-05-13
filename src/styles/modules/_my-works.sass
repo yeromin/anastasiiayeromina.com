@@ -1,0 +1,212 @@
+
+// -------------MY WORKS (GALLERY)-------------
+.my-works
+  padding-top: $section-padding
+  // padding-bottom: $section-padding
+  // border-bottom: 1px solid #aaa
+  // display: flex
+  // flex-direction: column
+  // flex-wrap: wrap
+  // justify-content: center
+  @media #{$breakpoint_lg}
+    padding-top: $section-padding-lg
+    // padding-bottom: $section-padding-lg
+  @media #{$breakpoint_xl}
+    padding-top: $section-padding-xl
+    // padding-bottom: $section-padding-xl
+
+.my-works__header
+  margin-bottom: 25px
+
+.my-works__gallery-nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  width: span(12)
+  margin-bottom: 20px
+  // margin-right: auto
+  // margin-left: auto
+  @media #{$breakpoint_md}
+    flex-wrap: nowrap
+    width: span(11)
+    margin: 0 auto
+    justify-content: space-between
+
+.my-works__genre-button
+  width: 50%
+  outline: none
+  border: none
+  cursor: pointer
+  transition: all 1s
+  background-color: transparent
+  padding: 10px
+  margin: 5px
+  color: $color-text
+  font-family: $sans-serif
+  font-size: $font-h1
+  order: 2
+  // margin-bottom: 30px
+  // padding-bottom: 15px
+  &:hover
+    transform: scale(1.3)
+.my-works__genre-button.active
+  font-size: 2.5rem
+  background-color: rgba(68, 68, 68, 0.05)
+  order: 1
+  &:hover
+    transform: scale(1)
+
+.my-works__gotogallery-link
+  // @extend .my-works__genre-button
+  @extend .about-me__link
+  // @extend .main-link
+  width: span(8 of 12)
+  margin-right: auto
+  margin-left: auto
+  margin-bottom: 25px
+  font-size: $font-h1
+  font-family: $sans-serif
+  &:hover, &:focus, &:active
+    font-weight: normal
+    color: $color-sea
+  @media #{$breakpoint_md}
+    margin-top: 25px
+  @media #{$breakpoint_lg}
+    width: span(3 of 12)
+    text-align: center
+    margin-top: 25px
+    font-size: $font-h1 + 0.2rem
+    &:hover, &:active, &:focus
+  @media #{$breakpoint_xl}
+    width: span(3 of 12)
+    text-align: center
+    margin-top: 25px
+    font-size: $font-h1 + 0.2rem
+    &:hover, &:active, &:focus
+
+.my-works__wrapp
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: center
+  width: calc(83.05085% + 50px)
+  margin: 0 auto
+  @media #{$breakpoint_md}
+    width: span(11)
+
+  .my-works
+    width: 50%
+    
+.my-works__gallery
+  // display: flex
+  // flex-direction: row
+  // flex-wrap: wrap
+  // justify-content: center
+  // align-items: center
+  // margin: 4px
+  max-width: span(10 of 12)
+  margin: 0 auto
+  box-sizing: border-box
+  overflow: hidden
+  &:after 
+    content: ''
+    display: block
+    clear: both
+  
+// .grid-sizer
+//   box-sizing: border-box
+//   width: 50%
+//   // height: 0
+//   @media #{$breakpoint_md}
+//     width: 25%
+//   @media #{$breakpoint_lg}
+//     width: 25%
+//   @media #{$breakpoint_xl}
+//     width: 25%
+
+.my-works__item
+  box-sizing: border-box
+  width: calc(50% - 50px)
+  // padding: 25px
+  // width: 45.95%
+  margin: 25px
+  vertical-align: bottom // instead of "display: block"
+  float: left
+  position: relative
+  transition: all 0.5s
+  // &:nth-child(n+7) // show only first 6 photos on small devices
+  //   display: none
+  //   @media #{$breakpoint_md}
+  //     display: block
+  //   @media #{$breakpoint_lg}
+  //     display: block
+  //   @media #{$breakpoint_xl}
+  //     display: block
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.6)
+    transition: all 1s
+    // border-radius: 50%
+    z-index: 1
+    top: 0
+    left: 0
+    opacity: 0
+  &:hover
+    .item-title
+      opacity: 1
+    &:before
+      opacity: 1
+  .item-title
+    z-index: 2
+    transition: opacity 1s
+    color: #fff
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+    opacity: 0
+
+  .item-img
+    width: 100%
+    height: 100%
+    display: block
+.my-works__gallery-box
+  display: none
+
+.visible
+  display: block
+  height: 100%;
+  position: relative;
+  visibility: visible;
+
+
+// ------------- MY WORKS (GALLERY) ENDS -------------
+
+// ------------- ALBUM -------------
+.album
+  padding-top: 50px
+
+.album_description
+  margin: 0
+  text-transform: unset
+  font-weight: 100
+  width: span(8)
+  margin: 0 auto
+  line-height: 33px
+  @media #{$breakpoint_md}
+    width: span(10)
+
+.album-wrapp
+  padding-top: 25px
+
+.my-works__item.album-item
+  width: 100%
+  &:before
+    display: none
+  &:hover
+    background-color: rgba(0,0,0,0)

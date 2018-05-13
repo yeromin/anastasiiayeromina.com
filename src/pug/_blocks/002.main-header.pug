@@ -1,0 +1,58 @@
+header
+  h1.visually-hidden= title
+  .logo
+    img.logo__image(src='img/main-logo_1x.png', srcset='img/main-logo_1x.png 1x, img/main-logo_2x.png 2x', alt='Фотограф Анастасия Еремина', title='Фотограф Анастасия Еремина', aria-hidden='true')
+    a.logo__link(href='/')
+  nav.main-nav(aria-label='Основное меню', itemscope='', itemtype='http://schema.org/SiteNavigationElement')
+    .hamburger-wrap
+      h2.hamburger-wrap__header.visually-hidden Меню
+      .hamburger-wrap__box
+        .hamburger-wrap__item.hamburger-wrap__first
+        .hamburger-wrap__item.hamburger-wrap__second
+        .hamburger-wrap__item.hamburger-wrap__third
+    
+    //- Main menu:
+    ul.main-nav__list
+      li.main-nav__list-item
+        a.main-nav__link(href='about-me.html') Обо мне
+      li.main-nav__list-item
+        a.main-nav__link(href='gallery.html') Портфолио
+      li.main-nav__list-item
+        a.main-nav__link(href='services.html') Услуги
+      li.main-nav__list-item
+        a.main-nav__link(href='reviews.html') Отзывы
+      li.main-nav__list-item
+        a.main-nav__link(href='blog.html') Блог
+      li.main-nav__list-item
+        a.main-nav__link(href='contacts.html') Контакты
+    
+    //- Main-nav fixed:
+    .main-nav__list--fixed
+      .main-nav__logo-in-menu
+        img.main-nav__image(src='img/main-logo_1x.png', srcset='img/main-logo_1x.png 1x, img/main-logo_2x.png 2x', alt="Логотип 'Фотограф Анастасия Еремина' ")
+        a.main-nav__logo-link(href='/')
+      ul.main-nav__list-box
+        li.main-nav__list-item
+          a.main-nav__link(href='about-me.html') Обо мне
+        li.main-nav__list-item
+          a.main-nav__link(href='gallery.html') Портфолио
+        li.main-nav__list-item
+          a.main-nav__link(href='services.html') Услуги
+        li.main-nav__list-item
+          a.main-nav__link(href='reviews.html') Отзывы
+        li.main-nav__list-item
+          a.main-nav__link(href='blog.html') Блог
+        li.main-nav__list-item
+          a.main-nav__link(href='contacts.html') Контакты
+
+  //- Main slider:
+  .main-slider
+    span.main-slider__item1
+    span.main-slider__item2
+    span.main-slider__item3
+    span.main-slider__item4
+
+  //- a.scrollDown(href='#about-me')
+    span
+    span
+    span

@@ -1,0 +1,72 @@
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  &::before, &::after
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+html
+  color: $color-text
+  font-size: $font-h2
+  font-family: $sans-serif
+  color: $color-text
+  font-size: 16px
+  // @media #{$breakpoint_lg}
+    // font-size: 18px
+
+  // font-family: Helvetica, Arial, sans-serif
+  // font-family: 'Cormorant Garamond', serif
+
+body 
+  position: relative
+  width: 100%
+  max-width: 1920px
+  margin-right: auto
+  margin-left: auto
+  // background: susy-svg-grid() no-repeat scroll
+
+h1, h2, h3, h4, h5, h6
+  text-align: center
+  text-transform: uppercase
+
+.wrapper 
+  position: relative
+  max-width: 1000px
+  margin: 0 auto
+
+.visually-hidden
+  // font-size: 1rem
+  // visibility: hidden
+  // margin: 0px
+  // padding: 0px
+  position: absolute
+  clip: rect(0 0 0 0)
+  width: 1px
+  height: 1px
+  margin: -1px
+
+.main-text
+  color: $color-text
+
+.main-link
+  color: $color-text
+  text-decoration: none
+  cursor: pointer
+  outline: none
+  word-wrap: normal
+  // display: block
+  // border: 2px solid transparent
+  // &:hover
+  //   border: 2px solid rgba(50,50,50,0.5)
+  // &:active
+  //   border: 2px solid rgba(50,50,50,0.5)
+
+// Padding between site sections (e.g. "Header", "About me" etc)
+.main-second-header
+  color: $color-text
+  letter-spacing: 2px
+  text-align: center
+  text-transform: uppercase
+  margin: 0

@@ -1,0 +1,16 @@
+User-Agent: Yandex
+Host: www.anastasiiayeromina.com
+Disallow: *.json
+Disallow: *.ajax
+
+User-Agent: Googlebot
+Disallow: *.json
+Disallow: *.ajax
+
+User-Agent: *
+Disallow: *.json
+Disallow: *.ajax
+Disallow: /photo
+
+
+#Sitemap: http://www.anastasiiayeromina.com/sitemap.xml

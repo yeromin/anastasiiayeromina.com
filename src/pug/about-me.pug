@@ -1,0 +1,33 @@
+doctype html
+html
+  title Обо мне. Фотограф Анастасия Ерёмина. Семейный, детский и свадебный фотограф в Киеве
+  include ./_blocks/001.head.pug
+  body.under-construction-body
+    include ./_blocks/header.pug
+    section.page-content
+      h2.visually-hidden Основной контент сайта
+      section#about-me.about-me
+        h2.main-second-header.about-me__header Привет, я Анастасия Ерёмина, семейный и свадебный фотограф 
+        .about-me__container
+          .about__photo
+            image(src='img/about-me.jpg')
+          p.main-text.about-me__text
+            | Мой сайт в процессе наполнения. Позже вы сможете ознакомиться с моим портфолио и информацией об услугах, а также прочитать много интересного в моем блоге. 
+            br
+            | А пока можете связаться cо мной и я отвечу на ваши вопросы.
+            br
+            | Анастасия Ерёмина
+        .about-me__box
+          a.about-me__link(href='about-me.html')
+            | читать далее
+            .arrow-link
+              .arrow-mask
+    include ./_blocks/008.footer.pug
+  
+  //- ========= JAVASCRIPT =========
+  script(src="js/scripts.js")
+  <!--<Deject>-->
+  script(src='js/hamburger-menu.js')
+  script(src='js/back-to-top.js')
+  script(src='scripts/facebook-like-plugin.js')
+  <!--</Deject>-->

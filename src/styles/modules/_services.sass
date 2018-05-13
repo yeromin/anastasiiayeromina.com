@@ -1,0 +1,257 @@
+.service-title
+  font-size: 3rem
+  margin: 10px 0 40px
+
+.service_photo-header
+  display: none
+  +rmin(600)
+    margin-bottom: 30px
+    display: block
+    height: 150px
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,0.3)
+  +rmin(1200)
+    margin-bottom: 50px
+    height: 300px
+
+.photo-header__subtitle
+  color: #fff
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateY(-50%) translateX(-50%)
+  margin: 0
+  padding: 0
+  font-size: 3rem
+
+.table-list
+  padding: 0
+  list-style: none
+  margin: 0
+
+.table-title
+  color: #444
+  letter-spacing: 2px
+  margin: 0 0 20px
+  font-size: 24px
+
+.table__list-item
+  margin: 15px 0
+  line-height: 1.2rem
+  font-size: 1rem
+  font-family: Roboto, Arial, sans-serif
+
+.table-price
+  color: #444
+  letter-spacing: 2px
+  margin: auto 0 0
+  padding: 20px 0
+  font-size: 20px
+  border-top: 1px solid rgba(0,0,0,0.1)
+
+.service-container
+  width: span(12)
+  margin: 0 auto 30px
+  +rmin(1200)
+    width: span(10)
+    margin-bottom: 100px
+
+.service-table-3cells,
+.service-table-4cells
+  width: span(12)
+  margin: 0 auto
+  +rmin(600)
+  +rmin(900)
+  +rmin(1200)
+    display: flex
+  +rmin(1800)
+
+  .table-item
+    width: span(12)
+    +rmin(1200)
+      display: flex
+      flex-direction: column
+      width: span(4)
+      padding: 20px 20px 0
+      // margin: 0 20px
+      // &:first-child
+      //   margin-left: 0
+      // &:last-child
+      //   margin-right: 0
+
+.service-table-4cells
+  flex-wrap: wrap
+  .table-item
+    width: span(12)
+    +rmin(900)
+      display: flex
+      width: calc(50% - 40px)
+      flex-direction: column
+      // margin: 0
+      // &:nth-child(even)
+      //   // margin-left: 40px
+      // &:nth-child(odd)
+      //   margin-right: 40px
+    +rmin(1200)
+      width: span(3)
+      margin: 0 20px
+      &:nth-child(odd)
+        margin: 0
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+      
+.table-item_recommend
+  background-color: rgba(0,0,0,0.05)
+
+.table-item
+  position: relative
+  cursor: pointer
+
+.table-item:hover
+  .table-item__hover
+    position: absolute
+    content: ''
+    height: 0
+    width: 0
+    background-color: rgba(0,0,0,0.1)
+    // transition: all 0.5s
+    &:nth-child(1)
+      background-color: rgba(0,0,0,0.1)
+      height: 100%
+      width: 1px
+      top: 0
+      left: 0
+      animation: service_hover 0.5s ease-in backwards
+      @keyframes service_hover
+        0%
+          height: 0
+          width: 1px
+        100%
+          height: 100%
+          width: 1px
+    &:nth-child(2)
+      background-color: rgba(0,0,0,0.1)
+      height: 1px
+      width: 100%
+      top: 0
+      left: 0
+      animation: service_hover2 0.5s ease-in backwards
+      @keyframes service_hover2
+        0%
+          height: 1px
+          width: 0
+        100%
+          height: 1px
+          width: 100%
+
+    &:nth-child(3)
+      background-color: rgba(0,0,0,0.1)
+      height: 1px
+      width: 100%
+      bottom: 0
+      left: 0
+      animation: service_hover3 0.5s ease-out backwards
+      animation-delay: 0.5s
+      @keyframes service_hover3
+        0%
+          height: 1px
+          width: 0
+        100%
+          height: 1px
+          width: 100%
+
+    &:nth-child(4)
+      background-color: rgba(0,0,0,0.1)
+      height: 100%
+      width: 1px
+      top: 0
+      right: 0
+      animation: service_hover4 0.5s ease-out backwards
+      animation-delay: 0.5s
+      @keyframes service_hover4
+        0%
+          height: 0
+          width: 1px
+        100%
+          height: 100%
+          width: 1px
+
+
+.service-text
+  line-height: 1.4rem
+  font-size: 1rem
+  font-family: Roboto, Arial, sans-serif
+  margin: 30px auto 0
+  +rmin(1200)
+    margin: 50px auto 0
+
+.service-table-row__left,
+.service-table-row__right
+  +rmin(600)
+    display: flex
+  .service-row-photo
+    display: none
+    +rmin(600)
+      display: block
+      width: 50%
+      height: 500px
+  .service-row-text
+    width: 100%
+    +rmin(600)
+      margin-right: 30px
+      width: 50%
+  .service-text
+    margin: 0 0 30px
+
+.service-table-row__right
+  .service-row-text
+    +rmin(600)
+      margin-left: 30px
+
+
+
+
+// .service-wedding,
+// .service-reportage,
+// .service-photobooks,
+// .service-contacts
+//   position: relative
+//   &:before
+//     position: absolute
+//     width: 100vw
+//     height: 1px
+//     top: -50px
+//     left: 0
+//     right: 0
+//     content: ''
+//     margin-left: calc(50% - 50vw)
+//     // margin-right: calc(50% - 50vw)
+//     background-color: #000000
+//     opacity: 0.2
+
+.service-contacts__header
+  margin: 0 0 30px
+  +rmin(900)
+    margin: 0 0 50px
+
+.service-order
+  display: block
+  text-align: center
+  width: 100%
+  background-color: transparent
+  padding: 0
+  margin: 0
+  border: none
+  font-family: inherit
+  cursor: pointer
+  outline: none
+  +rmin(1200)
+    margin: 50px auto 0
+    font-size: 1.5rem

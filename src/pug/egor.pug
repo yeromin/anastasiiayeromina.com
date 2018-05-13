@@ -1,0 +1,28 @@
+doctype html
+html
+  title Первая фотосессия Егора Андреевича. Фотограф Анастасия Ерёмина. Семейный, детский и свадебный фотограф в Киеве
+  include ./_blocks/001.head.pug
+  body.under-construction-body
+    include ./_blocks/header.pug
+    main.page-content
+      h2.visually-hidden Основной контент сайта
+      section.template-main
+        p.template-text
+          | Первая фотосессия 
+          strong Егора Андреевича :)
+        p.template-text
+          a.template-link(href='/photo/Egor.zip') Скачать фотографии
+        img.template-img(src='../img/egor.jpg', alt='Маленький Егор')
+    include ./_blocks/008.footer.pug
+
+  //- ========= JAVASCRIPT =========
+
+  script(src="js/scripts.js")
+  <!--<Deject>-->
+  script(src='js/hamburger-menu.js')
+  script(src='js/back-to-top.js')
+  script(src='scripts/facebook-like-plugin.js')
+  <!--</Deject>-->
+
+  //- Не смог настроить асинхронную загрузку именно этого шрифта, поэтому загружаю его в конце, чтобы не блокировать стек
+  //- link(href='https://fonts.googleapis.com/css?family=Roboto:100&subset=cyrillic', rel='stylesheet')

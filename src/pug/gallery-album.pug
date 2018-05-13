@@ -1,0 +1,38 @@
+doctype html
+html
+  title Галерея работ. Фотограф Анастасия Ерёмина. Семейный, детский и свадебный фотограф в Киеве
+  include ./_blocks/001.head.pug
+  body.under-construction-body
+    include ./_blocks/header.pug
+    main.page-content
+      h2.visually-hidden Основной контент сайта
+      .gallery-header(style="background-image: url('./img/sl4.jpg')")
+        h2.gallery-title Семья и дети
+      section.my-works.album
+        h3.album_description Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет выполнять важные задания по разработке направлений прогрессивного развития. Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации модели развития.
+        .my-works__wrapp.album-wrapp
+          a(href="img/Main-gallery/01.Newborn/gallery_x2_00001.jpg").my-works__item.album-item.gallery1
+            img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00001.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+          a(href="img/Main-gallery/01.Newborn/gallery_x2_00004.jpg").my-works__item.album-item.gallery1
+            img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+          a(href="img/Main-gallery/01.Newborn/gallery_x2_00005.jpg").my-works__item.album-item.gallery1
+            img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00013.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00005.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00005.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+          a(href="img/Main-gallery/01.Newborn/gallery_x2_00006.jpg").my-works__item.album-item.gallery1
+            img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00005.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00006.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00006.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+
+    include ./_blocks/008.footer.pug
+  
+  //- ========= JAVASCRIPT =========
+
+  script(src="js/scripts.js")
+
+  <!--<Deject>-->
+  script(src="lib/halkaBox.min.js")
+  script(src='js/hamburger-menu.js')
+  script(src='js/back-to-top.js')
+  script(src='js/gallery.js')
+  script(src='scripts/facebook-like-plugin.js')
+  <!--</Deject>-->
+
+  //- Не смог настроить асинхронную загрузку именно этого шрифта, поэтому загружаю его в конце, чтобы не блокировать стек
+  //- link(href='https://fonts.googleapis.com/css?family=Roboto:100&subset=cyrillic', rel='stylesheet')
