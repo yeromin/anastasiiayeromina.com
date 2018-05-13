@@ -78,11 +78,17 @@
       flex-direction: column
       width: span(4)
       padding: 20px 20px 0
+      margin: 0 10px
       // margin: 0 20px
       // &:first-child
       //   margin-left: 0
       // &:last-child
       //   margin-right: 0
+
+// .service-table-3cells
+//   .table-item
+//     &:last-child
+//       padding-right: 0
 
 .service-table-4cells
   flex-wrap: wrap
@@ -112,7 +118,7 @@
 
 .table-item
   position: relative
-  cursor: pointer
+  // cursor: pointer
 
 .table-item:hover
   .table-item__hover
@@ -244,7 +250,8 @@
 .service-order
   display: block
   text-align: center
-  width: 100%
+  width: 200px
+  line-height: 50px
   background-color: transparent
   padding: 0
   margin: 0
@@ -252,6 +259,25 @@
   font-family: inherit
   cursor: pointer
   outline: none
+  position: relative
+  overflow: hidden
+  color: #000
+  text-decoration: none
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 0
+    height: 1px
+    transition: all 0.5s
+    // transform: translateX(-100%)
+    transform: translateX(-50%)
+    left: 50%
+    background-color: rgba(0,0,0,0.3)
+  &:hover
+    &:before
+      width: 40%
   +rmin(1200)
     margin: 50px auto 0
     font-size: 1.5rem
