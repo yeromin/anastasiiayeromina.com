@@ -5,7 +5,7 @@
   // var mainNavList = document.querySelector(".main-nav__list--fixed");
   var mainNav = document.querySelector(".main-nav");
   var mainLogo = document.querySelector(".logo");
-  
+
   // show on / show off the UP-urrow
   window.onscroll = function () {
     var pageScrollPoint = window.pageYOffset || document.documentElement.scrollTop;
@@ -73,3 +73,16 @@
   // Smooth scroll to top ENDS 
 
 }(window, document));
+
+function scrollToAnchor() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
+scrollToAnchor();

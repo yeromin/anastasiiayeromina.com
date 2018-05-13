@@ -78,11 +78,17 @@
       flex-direction: column
       width: span(4)
       padding: 20px 20px 0
+      margin: 0 10px
       // margin: 0 20px
       // &:first-child
       //   margin-left: 0
       // &:last-child
       //   margin-right: 0
+
+// .service-table-3cells
+//   .table-item
+//     &:last-child
+//       padding-right: 0
 
 .service-table-4cells
   flex-wrap: wrap
@@ -112,7 +118,7 @@
 
 .table-item
   position: relative
-  cursor: pointer
+  // cursor: pointer
 
 .table-item:hover
   .table-item__hover
@@ -245,7 +251,7 @@
   display: block
   text-align: center
   width: 200px
-  height: 50px
+  line-height: 50px
   background-color: transparent
   padding: 0
   margin: 0
@@ -255,6 +261,8 @@
   outline: none
   position: relative
   overflow: hidden
+  color: #000
+  text-decoration: none
   &:before
     content: ''
     position: absolute
