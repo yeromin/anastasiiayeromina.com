@@ -91,7 +91,7 @@ gulp.task('pug:dev', function () {
     return gulp.src(path.src.pug)
     .pipe(debug({title: 'src'}))
     .pipe(plumber())
-    .pipe(pug({pretty: false}).on("error", notify.onError()))
+    .pipe(pug({pretty: true}).on("error", notify.onError()))
     .pipe(gulp.dest(path.src.root))
     .pipe(browserSync.reload({stream: true}));
 });
@@ -171,7 +171,7 @@ gulp.task('img', function () {
 gulp.task('scripts', function() {
     return gulp.src([path.src.lib, path.src.js, path.src.scripts])
         .pipe(concat('scripts.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(path.build.js));
 });
 
