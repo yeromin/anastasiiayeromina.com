@@ -11,17 +11,17 @@ html
         .about-me__container
           .about__photo
             image(src='img/about-me.jpg')
-          p.main-text.about-me__text
-            | Мой сайт в процессе наполнения. Позже вы сможете ознакомиться с моим портфолио и информацией об услугах, а также прочитать много интересного в моем блоге. 
-            br
-            | А пока можете связаться cо мной и я отвечу на ваши вопросы.
-            br
-            | Анастасия Ерёмина
-        .about-me__box
-          a.about-me__link(href='about-me.html')
-            | читать далее
-            .arrow-link
-              .arrow-mask
+          .main-text.about-me__text
+            .text
+              p Мой сайт в процессе наполнения. Позже вы сможете ознакомиться с моим портфолио и информацией об услугах, а также прочитать много интересного в моем блоге. 
+              p А пока можете связаться cо мной и я отвечу на ваши вопросы.
+              p Анастасия Ерёмина
+            .about-me__box 
+              a.about-me__link(href='about-me.html')
+                | читать далее
+                .arrow-link
+                  .arrow-mask
+
     include ./_blocks/008.footer.pug
   
   //- ========= JAVASCRIPT =========

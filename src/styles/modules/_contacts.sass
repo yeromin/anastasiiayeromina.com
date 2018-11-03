@@ -26,7 +26,6 @@
     flex-direction: row
 
 .contacts-text
-  @extend .about-me__text
   text-align: center
 
 .contacts__link-box
@@ -36,14 +35,13 @@
     width: span(6)
 
 .contacts-link
-  @extend .about-me__text 
   @extend .main-link
   text-align: center
   display: block
   margin-bottom: 10px
   font-family: $sans-serif
   transition: all 0.5s
-  width: 150px
+  // width: 150px
   // border-bottom: 1px solid $color-light-gray
   // letter-spacing: 2px
   // text-align: left
@@ -52,15 +50,16 @@
     color: $color-sea
 
 .contacts-social
-  @extend .about-me__text 
   @extend .main-link
-  @extend .contacts-link
   display: flex
   flex-flow: row nowrap
   justify-content: space-between
   align-items: center
+  width: 50%
+  margin: 0 auto 10px
   transition: all 0.5s
-  width: 150px
+  text-align: center
+  // width: 150px
 
   &:hover, &:focus, &:active
     color: $color-sea
