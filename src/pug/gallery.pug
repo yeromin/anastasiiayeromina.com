@@ -2,34 +2,39 @@ doctype html
 html
   - var title= 'Галерея работ. Фотограф Анастасия Ерёмина. Семейный, детский и свадебный фотограф в Киеве'
   include ./_blocks/001.head.pug
-  body.under-construction-body
+  body.gallery
     include ./_blocks/header.pug
     main.page-content
-      h2.visually-hidden Основной контент сайта
-      .gallery-header(style="background-image: url('./img/sl4.jpg')")
+      //- h2.visually-hidden Основной контент сайта
+      //- .gallery-header(style="background-image: url('./img/sl4.jpg')")
         h2.gallery-title
       section.my-works
-        .my-works__wrapp
-          .my-works-category
-            .category-descr
-              h3.my-works-category-title Любовь и бла-бла
-            .category-albums
-              a(href="/").my-works__item
-                img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00013.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00005.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00005.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
-              a(href="/").my-works__item
-                img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00001.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
-              a(href="/").my-works__item
-                img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
-          .my-works-category
-            .category-descr
-              h3.my-works-category-title Дети и бла-бла
-            .category-albums
-              a(href="/").my-works__item
-                img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
-              a(href="/").my-works__item
-                img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00013.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00005.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00005.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
-              a(href="/").my-works__item
-                img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00001.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+        .my-works-category
+          .category-descr
+            h3.my-works-category-title 
+              a(href='#') Любовь и бла-бла
+          .category-albums
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00013.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00005.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00005.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00001.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+        .my-works-category
+          .category-descr
+            h3.my-works-category-title
+              a(href='#') Дети и бла-бла
+          .category-albums
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00004.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00004.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00013.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00005.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00005.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
+            a(href="/").my-works__item
+              img.item-img(src='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg', srcset='img/Main-gallery/01.Newborn/gallery_x1_00001.jpg 1x, img/Main-gallery/01.Newborn/gallery_x2_00001.jpg 2x', alt='Фотография галереи, фотограф: Анастасия Еремина')
 
     include ./_blocks/008.footer.pug
   

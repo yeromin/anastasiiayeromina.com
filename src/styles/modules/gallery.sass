@@ -17,3 +17,32 @@
   margin: 0
   padding: 0
   font-size: 3rem
+
+.my-works-category-title a
+  color: $color-text
+  text-decoration: none
+  position: relative
+  overflow: hidden
+  display: block
+  &:after
+    transition: all 0.4s
+    position: absolute
+    content: ''
+    bottom: 0
+    left: 0
+    right: 0
+    height: 1px
+    width: 100%
+    background-color: $color-text
+    transform: translateX(-100%)
+  &:hover 
+    &:after
+      transform: translateY(0)
+
+
+body.gallery
+  header
+    margin-bottom: 65px
+
+  .main-nav__link
+    color: $color-text
