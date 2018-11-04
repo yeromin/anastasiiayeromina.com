@@ -237,8 +237,15 @@ var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
-  columnWidth: 100,
-  
+  columnWidth: '.grid-sizer',
+  gutter: 0,
+  horizontalOrder: true,
+  percentPosition: true,
+  fitWidth: true,
+  transitionDuration: '0.2s',
+  stagger: 30,
+
+
 
 });
 
